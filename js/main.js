@@ -1,11 +1,3 @@
-/* =========================================================
-   Desa Sukamaju — main.js
-   Semua data di bawah ini masih DUMMY. Ganti isi array
-   `potensiData` dan `galeriData` dengan data asli desa kamu.
-   ========================================================= */
-
-/* ---------- 1. DATA DUMMY (ganti sesuai data asli) ---------- */
-
 const potensiData = [
   {
     kategori: "umkm",
@@ -40,6 +32,7 @@ const galeriData = [
   { img: "assets/keg3.jpeg", kategori: "kegiatan", caption: "Psikoedukasi : Kenali emosi sdn 02 mojorejo" },
   { img: "assets/keg4.jpeg", kategori: "kegiatan", caption: "Pertemuan ibu-ibu PKK" },
   { img: "assets/keg5.jpeg", kategori: "kegiatan", caption: "Posyandu balita" },
+  { img: "assets/keg7.jpeg", kategori: "kegiatan", caption: "Pemandangan persawahan" },
 ];
 
 /* ---------- 2. RENDER: potensi desa ---------- */
