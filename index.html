@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desa Sukamaju — Website Resmi</title>
+<meta name="description" content="Website informasi resmi Desa Sukamaju: profil desa, potensi UMKM, wisata, galeri, dan kontak.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav">
+    <a href="#beranda" class="nav-brand">
+      <span class="mark">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l7-6 7 6v12"/><path d="M9 21v-6h6v6"/></svg>
+      </span>
+      Desa Mojorejo
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#profil">Profil Desa</a></li>
+      <li><a href="#potensi">Potensi Desa</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="beranda">
+  <img src="https://picsum.photos/seed/desahero/1800/1100" alt="Pemandangan Desa Sukamaju">
+  <div class="hero-content">
+    <p class="hero-kicker">Kec. bendosari · Kab. Sukoharjo · Jawa Tengah</p>
+    <h1>Desa Mojorejo</h1>
+    <p>Menyusuri sawah berundak, menikmati kopi lereng bukit, dan mengenal kerajinan turun-temurun warga desa.</p>
+    <div class="hero-actions">
+      <a href="#potensi" class="btn btn-accent">Jelajahi Potensi Desa</a>
+      <a href="#kontak" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.5); color:#fff;">Hubungi Kami</a>
+    </div>
+  </div>
+  <svg class="contour" viewBox="0 0 1200 80" preserveAspectRatio="none" style="position:absolute; bottom:-1px; left:0; z-index:2;">
+    <path d="M0,40 C150,80 300,0 450,40 C600,80 750,10 900,45 C1020,70 1120,30 1200,50 L1200,80 L0,80 Z" fill="#FBF8F1"/>
+  </svg>
+</section>
+
+<!-- ============ TENTANG / SAMBUTAN ============ -->
+<section class="bg-surface" id="profil">
+  <div class="container">
+    <div class="welcome reveal">
+      <div class="welcome-photo">
+        <img src="https://picsum.photos/seed/balaidesa/700/900" alt="Balai Desa Sukamaju">
+      </div>
+      <div>
+        <p class="eyebrow">Tentang Desa</p>
+        <h2>Selamat datang di Desa Mojorejo</h2>
+        <p>Desa Mojorejo merupakan wilayah strategis di Kecamatan Bendosari yang dikenal dengan keramahan warga dan semangat gotong royongnya. Sebagai desa berkembang yang dinamis, kami berkomitmen untuk terus meningkatkan kualitas hidup masyarakat melalui pembangunan infrastruktur, pemberdayaan ekonomi lokal, dan pelayanan publik yang prima.</p>
+        <p>Melalui website ini, kami ingin memperkenalkan potensi UMKM, destinasi wisata, dan kegiatan masyarakat Desa Mojorejo kepada pengunjung dan wisatawan.</p>
+        <div class="stat-row">
+          <div class="stat"><b>6</b><span>Dusun</span></div>
+          <div class="stat"><b>2.615</b><span>Jiwa penduduk</span></div>
+          <div class="stat"><b>366 ha</b><span>Luas wilayah</span></div>
+          <div class="stat"><b>2</b><span>UMKM aktif</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POTENSI DESA ============ -->
+<section class="bg-tint" id="potensi">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Potensi Desa</p>
+      <h2>UMKM, Wisata &amp; Fasilitas Unggulan</h2>
+      <p>Produk lokal, destinasi wisata, dan fasilitas warga yang menjadi kebanggaan Desa Sukamaju.</p>
+    </div>
+
+    <div class="filter-row reveal" id="potensiFilter">
+      <button class="filter-btn active" data-filter="semua">Semua</button>
+      <button class="filter-btn" data-filter="umkm">UMKM</button>
+      <button class="filter-btn" data-filter="wisata">Wisata</button>
+    </div>
+
+    <div class="grid-3" id="potensiGrid"></div>
+  </div>
+</section>
+
+<!-- ============ GALERI ============ -->
+<section class="bg-surface" id="galeri">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Galeri</p>
+      <h2>Dokumentasi Kegiatan &amp; Suasana Desa</h2>
+      <p>Kumpulan foto kegiatan masyarakat, produk UMKM, dan keindahan alam Desa Sukamaju.</p>
+    </div>
+    <div class="filter-row reveal" id="galeriFilter">
+      <button class="filter-btn active" data-filter="semua">Semua</button>
+      <button class="filter-btn" data-filter="wisata">Wisata</button>
+      <button class="filter-btn" data-filter="umkm">UMKM</button>
+      <button class="filter-btn" data-filter="kegiatan">Kegiatan</button>
+    </div>
+    <div class="gallery-grid reveal" id="galeriGrid"></div>
+  </div>
+</section>
+
+<!-- ============ KONTAK ============ -->
+<section class="bg-tint" id="kontak">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Kontak</p>
+      <h2>Hubungi Kami</h2>
+      <p>Untuk informasi lebih lanjut, kunjungi kantor desa atau hubungi kontak berikut.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div>
+        <div class="contact-info-item">
+          <div class="icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <b>Alamat Kantor Desa</b>
+            <span>jl. Raya Sukoharjo - Jumapolo, Mojorejo, kec. Bendosari, Kab. Sukoharjo kode pos 57572</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <b>Jam Operasional</b>
+            <span>Senin s/d Kamis : 07.30 - 15.00 WIB</span>
+            <br> 
+            <span>Jum'at : 07.30 - 11.00 WIB </span>  
+            <br>
+            <span>Hari Sabtu-Minggu & Hari Libur Nasional : Libur</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-frame">
+        <iframe
+            src="https://www.google.com/maps?q=-7.699056,110.912056&z=15&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokasi Desa Mojorejo">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="mark">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l7-6 7 6v12"/><path d="M9 21v-6h6v6"/></svg>
+          </span>
+          <b>Desa Mojorejo</b>
+        </div>
+        <p style="font-size:14px; max-width: 34ch;">Website informasi Desa Mojorejo — memperkenalkan potensi UMKM, wisata, dan kegiatan Program KKN kepada masyarakat.</p>
+      </div>
+      <div>
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#profil">Profil Desa</a></li>
+          <li><a href="#potensi">Potensi Desa</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Media Sosial</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/pemdesmojorejobds?igsh=c2JpNDRoZms0ODYx" target="_blank" rel="noopener"> <i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.facebook.com/share/1HET4rVjwD/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href="https://www.youtube.com/@pemdesmojorejo" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lalita Hemas Pangesti.</span>
+      <span>Dibuat untuk Program KKN</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
