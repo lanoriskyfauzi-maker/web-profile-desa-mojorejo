@@ -4,14 +4,14 @@ const potensiData = [
     nama: "Pia Jolodoro",
     deskripsi: "Roti atau Kue Pia Jolodoro diproduksi menggunakan kombinasi bahan adonan kue tradisional dan berbagai isian.",
     img: "assets/jolodoro.jpeg",
-    kontak: "https://wa.me/6281234567890"
+    kontak: "6281802555994"
   },
   {
     kategori: "umkm",
     nama: "JAN Etes",
     deskripsi: "berfokus pada olahan jajanan tradisional atau camilan kering (snack pangan lokal) yang dikembangkan secara kreatif oleh ibu-ibu Pokja 2 PKK.",
     img: "assets/janetes.jpeg",
-    kontak: "https://wa.me/6281234567891"
+    kontak: "6281931222221"
   },
   {
     kategori: "wisata",
@@ -34,6 +34,15 @@ const galeriData = [
   { img: "assets/keg5.jpeg", kategori: "kegiatan", caption: "Posyandu balita" },
   { img: "assets/keg7.jpeg", kategori: "kegiatan", caption: "Pemandangan persawahan" },
 ];
+
+
+/* ---------- FUNCTION: link WA otomatis ---------- */
+
+function buatLinkWA(nomor, namaProduk) {
+  const pesan = `Halo, saya tertarik dengan produk ${namaProduk} dari UMKM Desa Mojorejo. Apakah masih tersedia?`;
+  const teksEncoded = encodeURIComponent(pesan);
+  return `https://wa.me/${nomor}?text=${teksEncoded}`;
+}
 
 /* ---------- 2. RENDER: potensi desa ---------- */
 
