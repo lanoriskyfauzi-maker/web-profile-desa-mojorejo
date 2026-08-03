@@ -59,7 +59,7 @@ function renderPotensi(filter) {
         <h3>${item.nama}</h3>
         <p>${item.deskripsi}</p>
         ${item.kategori === "umkm" ? `
-        <a class="card-link" href="${item.kontak}" target="_blank" rel="noopener">
+        <a class="card-link" href="${buatLinkWA(item.kontak, item.nama)}" target="_blank" rel="noopener">
           Hubungi via WhatsApp →
         </a>` : ""}
       </div>
