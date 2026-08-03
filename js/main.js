@@ -17,7 +17,7 @@ const potensiData = [
     kategori: "wisata",
     nama: "Sukasikuda Stable & Resto",
     deskripsi: " destinasi wisata keluarga yang memadukan wisata berkuda (horse riding), olahraga renang, dan wisata kuliner (resto) dalam satu kawasan.",
-    img: "assets/sukasikuda.jpg",
+    img: "assets/keg9.jpg",
     kontak: "#"
   },
   
